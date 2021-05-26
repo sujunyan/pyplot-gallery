@@ -3,7 +3,7 @@
 This is a small gallery of pyplot examples. Hopefully I can retrieve the sample codes and save some time in the future. 
 Take a quick look at the following illustrations to see available samples. 
 
-In addition, the file [style.py](submodules/style.py) contains useful functions to (globally) change the style for scientific publication LaTeX templates.
+In addition, the file [style.py](./style.py) contains useful functions to (globally) change the style for scientific publication LaTeX templates.
 
 # Illustrations
 
