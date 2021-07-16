@@ -34,4 +34,4 @@ def use_ieee_style():
         \usepackage{libertine}
         """,
     }
-    plt.rcParams.update(rc_fonts
+    plt.rcParams.update(rc_fonts)
