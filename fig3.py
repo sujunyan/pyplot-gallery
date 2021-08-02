@@ -40,7 +40,7 @@ if __name__ == "__main__":
 		},
 		'medianprops':{
 			'c':style.google_colors[2],
-			'lw':3,
+			'lw':2,
 			},
 		"widths":0.2,
 		
