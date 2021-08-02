@@ -17,10 +17,11 @@ if __name__ == '__main__':
 	ax2 = ax1.twinx()
 	ax2.set_ylabel("ylabel2")
 	n = 10
+	lw = 2
 	for i in range(2):
 		marker = ['+', '.'][i]
-		ax1.plot([(i+1)*x for x in range(n)],f'-{marker}',label=f'leg.1{i}')
-		ax2.plot([(i+1)/(x+1) for x in range(n)],f'--{marker}',label=f'leg.2{i}')
+		ax1.plot([(i+1)*x for x in range(n)],f'-{marker}',label=f'leg.1{i}', lw=lw)
+		ax2.plot([(i+1)/(x+1) for x in range(n)],f'--{marker}',label=f'leg.2{i}', lw=lw)
 	ax1.grid(ls='--')
 	fig.legend(loc='upper center', ncol=2, 
 			   bbox_to_anchor=(0, -0.1, 1, 0.2), mode=None,
