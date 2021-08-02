@@ -7,11 +7,11 @@ In addition, the file [style.py](./style.py) contains useful functions to (globa
 
 # Illustrations
 
-#### Figure 1 [[SRC]](submodules/fig1/fig1.py)
-![figure 1](submodules/fig1/fig1.png)
+#### Figure 1 [[SRC]](fig1.py)
+![figure 1](figs/fig1.png)
 
-#### Figure 2 [[SRC]](submodules/fig2/fig2.py)
-![figure 2](submodules/fig2/fig2.png)
+#### Figure 2 [[SRC]](fig2.py)
+![figure 2](figs/fig2.png)
 
-#### Figure 3 [[SRC]](submodules/fig3/fig3.py)
-![figure 3](submodules/fig3/fig3.png)
+#### Figure 3 [[SRC]](fig3.py)
+![figure 3](figs/fig3.png)
