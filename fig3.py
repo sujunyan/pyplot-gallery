@@ -15,6 +15,7 @@ if __name__ == "__main__":
 	np.random.seed(0)
 	n = 5
 	data_mat = np.random.rand(1000,n)
+	#style.change_hatch_color('#707070')
 	args = {
 		'notch':True,
 		'whis':1.5,
@@ -28,8 +29,10 @@ if __name__ == "__main__":
 		'boxprops':{
 			#'facecolor':style.google_colors[1],
 			#'facecolor':"None",
-			'edgecolor':style.google_colors[1],
-			'facecolor':style.google_colors[1]
+			'facecolor':style.google_colors[1],
+			'edgecolor':"#707070",
+			#'color': "None",
+			#'hatch':'/',
 			},
 		'whiskerprops':{
 			'color':style.google_colors[1],
@@ -39,7 +42,7 @@ if __name__ == "__main__":
 			'color':style.google_colors[1],
 		},
 		'medianprops':{
-			'c':style.google_colors[2],
+			'c': '#707070',
 			'lw':2,
 			},
 		"widths":0.2,
@@ -49,7 +52,7 @@ if __name__ == "__main__":
 	range_ = np.arange(n)
 	offset = 0.14
 	ax.boxplot(data_mat, **args, positions=range_+offset)
-	for prop in ['boxprops', 'whiskerprops', 'capprops']:
+	for prop in ['whiskerprops', 'capprops']:
 		args[prop]['color'] = style.google_colors[0]
 	args['boxprops']['facecolor'] = style.google_colors[0]
 
