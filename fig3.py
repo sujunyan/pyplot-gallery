@@ -7,6 +7,7 @@ import style
 some notes:
 whisker: the vertical line below and above the box
 cap: the horizontal line above the whisker
+@note: google color scheme might not be good for boxplot ...
 """
 
 if __name__ == "__main__":
