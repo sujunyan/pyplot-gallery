@@ -19,7 +19,7 @@ if __name__ == '__main__':
 	n = 10
 	lw = 2
 	for i in range(2):
-		marker = ['+', '.'][i]
+		marker = ['+', 'x'][i]
 		ax1.plot([(i+1)*x for x in range(n)],f'-{marker}',label=f'leg.1{i}', lw=lw)
 		ax2.plot([(i+1)/(x+1) for x in range(n)],f'--{marker}',label=f'leg.2{i}', lw=lw)
 	ax1.grid(ls='--')
@@ -29,5 +29,5 @@ if __name__ == '__main__':
 			   labelspacing=0.2, frameon=False)
 
 	fig.subplots_adjust(bottom=0.2, left=0.2, right=0.8)
-	fig.savefig("figs/fig1.png", bbox_inches='tight')
+	fig.savefig("figs/fig1.png")
 # %%
