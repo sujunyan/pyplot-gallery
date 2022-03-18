@@ -15,13 +15,23 @@ def change_hatch_color(c):
 def use_google_style_colors():
 	mpl.rcParams['axes.prop_cycle'] = mpl.cycler(color=google_colors) 
 
+"""
+require Latex installed
+"""
 def use_bold_tex_style():
+	print(f"using bold latex style")
 	mpl.rc('font', family='serif', serif='cm10')
 	mpl.rc('text', usetex=True)
-	# need to use $$ symbol to bold the label
-	mpl.rcParams['text.latex.preamble'] = r'''
-		\boldmath
-	'''
+	mpl.rc('text.latex', preamble=r'\usepackage{amsmath}\usepackage{bm} \boldmath')
+	## The following command is decreciated, I guess...
+	#matplotlib.rcParams['text.latex.preamble'] = [r'usepackage{bm}', r'\boldmath']
+
+	#mpl.rc('font', family='serif', serif='cm10')
+	#mpl.rc('text', usetex=True)
+	## need to use $$ symbol to bold the label
+	#mpl.rcParams['text.latex.preamble'] = r'''
+	#	\boldmath
+	#'''
 
 def use_acm_style():
     rc_fonts = {
