@@ -15,3 +15,6 @@ In addition, the file [style.py](./style.py) contains useful functions to (globa
 
 #### Figure 3 [[SRC]](fig3.py)
 ![figure 3](figs/fig3.png)
+
+#### Figure 4 [[SRC]](fig4.py)
+![figure 4](figs/fig4.png)
