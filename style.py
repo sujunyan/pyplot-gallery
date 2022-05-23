@@ -8,6 +8,9 @@ for a full list of matplotlib rc param
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
+# some good-looking colors defined by Junyan Su.
+g_colors = ["#3c5488","#ad002a","#e18727","#dc0000","#FEA772","#4dbbd5","#00a087"]
+
 google_colors = ["#ea4335","#4285f4","#fbbc04","#34a853","#b8dae9","#f4cccc", "#9048B9"]
 def change_hatch_color(c):
 	mpl.rcParams['hatch.color'] = c 
