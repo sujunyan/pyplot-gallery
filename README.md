@@ -51,3 +51,7 @@ to change the figure size. Note that the hight of the figure might need to be ad
 #### Figure 4 [[SRC]](fig4.py)
 
 [<img src="figs/fig4.png" width="400"/>](figs/fig4.png)
+
+#### Figure 5 [[SRC]](fig5.py)
+
+[<img src="figs/fig5.png" width="400"/>](figs/fig5.png)
