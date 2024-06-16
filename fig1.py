@@ -6,7 +6,7 @@ import matplotlib as mpl
 if __name__ == '__main__':
     # plot for energy
     style.use_ieee_style()
-    # mpl.rc('text', usetex=True)
+    # mpl.rc('text', usetex=true)
     # style.use_google_style_colors()
     
     fig, ax1 = plt.subplots()
@@ -19,13 +19,21 @@ if __name__ == '__main__':
     ax2 = ax1.twinx()
     ax2.set_ylabel("ylabel2")
     n = 10
-    lw = 2.5
+    lw = 2.0
     color1 = style.g_brown_color
     color2 = style.g_blue_color
+    y_dict = {}
     for i in range(2):
         marker = ['+', 'x'][i]
-        ax1.plot([(i+1)*x for x in range(n)],f'-{marker}',label=f'leg.1.{i}', lw=lw, color=color1)
-        ax2.plot([(i+1)/(x+1) for x in range(n)],f'--{marker}',label=f'leg.2.{i}', lw=lw, color=color2)
+
+        y_dict[(i,1)] = [(i+1)*x for x in range(n)]
+        ax1.plot(y_dict[(i,1)],f'-{marker}',label=f'leg.1.{i}', lw=lw, color=color1)
+
+        y_dict[(i,2)] = [(i+1)/(x+1) for x in range(n)]
+        ax2.plot(y_dict[(i,2)],f'--{marker}',label=f'leg.2.{i}', lw=lw, color=color2)
+
+    ax1.fill_between(range(n), y_dict[(0,1)], y_dict[(1,1)], color=color1, alpha=0.1)
+    ax2.fill_between(range(n), y_dict[(0,2)], y_dict[(1,2)], color=color2, alpha=0.1)
 
     ax1.yaxis.label.set_color(color1)
     ax1.tick_params(colors=color1, axis="y")

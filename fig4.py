@@ -40,7 +40,7 @@ def plot_broken_step():
         rate_limit_vec = Y_mat[:,m]
         ax = axs[m]
         for ax in axs[m,:]:
-            ax.step(x, rate_limit_vec, lw=2.5, color=style.g_blue_color)
+            ax.step(x, rate_limit_vec, lw=2.0, color=style.g_blue_color)
             # ax.grid(ls="--")
         axs[m,0].set_xlim(1,break_line-0.5)
         axs[m,1].set_xlim(T-break_line+0.5,T)
