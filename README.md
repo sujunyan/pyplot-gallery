@@ -11,7 +11,7 @@ In addition, the file [style.py](./style.py) contains useful functions to (globa
 The text styles (font size, font family, etc.) of IEEE templates are [here](https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/format-definition-table-and-glossary.pdf) and of ACM templates are [here](https://www.acm.org/binaries/content/assets/publications/article-templates/sig-alternate-guide.pdf).
 
 ## Font size
-The font size of figure caption of ACM publications is 9pt and the font size of IEEE publications is 8pt. We can use the command 
+The font size of figure caption in ACM template is 9pt and the font size caption in IEEE template is 8pt. We can use the command 
 
 ```
 matplotlib.rc("font", size=9)
