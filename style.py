@@ -7,6 +7,14 @@ for a full list of matplotlib rc param
 
 import matplotlib.pyplot as plt
 import matplotlib as mpl
+import numpy as np
+
+g_brown_color = np.array([160, 88, 44]) / 255.0
+g_blue_color =  np.array([89, 132, 183]) / 255.0
+g_green_color = np.array([84, 130, 53]) / 255.0
+g_g1_color =    np.array([182, 213, 191]) / 255.0
+g_yellow_color =np.array([244, 162, 89]) / 255.0
+g_red_color   = np.array([215, 48, 39]) / 255.0
 
 # some good-looking colors defined by Junyan Su.
 g_colors = ["#3c5488","#ad002a","#e18727","#dc0000","#FEA772","#4dbbd5","#00a087"]
@@ -40,7 +48,7 @@ def use_acm_style():
     rc_fonts = {
     "font.family": "serif",
     "font.size": 9,
-    #'figure.figsize': (5, 3),
+    'figure.figsize': (5, 3),
     "text.usetex": True,
     #'text.latex.preview': True,
     'text.latex.preamble': 
@@ -56,7 +64,7 @@ def use_ieee_style():
     "font.family": "serif",
 	"font.serif" : "Times",
     "font.size": 8,
-    'figure.figsize': (3.3, 2.5),
+    'figure.figsize': (3.5, 2.5),
     "text.usetex": True,
     #'text.latex.preview': True,
     'text.latex.preamble': 
