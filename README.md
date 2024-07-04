@@ -32,7 +32,7 @@ to change the figure size. Note that the hight of the figure might need to be ad
 ## Others
 - We can use the command `matplotlib.rc("text", usetex=true)` to use TeX engine to render the figure. But we need to have LaTeX engine installed in the computer.
 - I also define some colors in the file [style.py](./style.py).
-
+- We may use larger linewidth, e.g., `linewidth=2` in the lineplot for better presentation.
 
 # Illustrations
 
